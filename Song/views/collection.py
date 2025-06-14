@@ -2,9 +2,11 @@ from rest_framework import generics
 from ..models import Collection
 from ..serializers import CollectionSerializer
 
+
 class ListCollections(generics.ListAPIView):
     queryset = Collection.objects.all()
     serializer_class = CollectionSerializer
+
 
 class CreateCollections(generics.CreateAPIView):
     queryset = Collection.objects.all()

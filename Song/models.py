@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 
 # Create your models here
 
+
 class Genre(models.Model):
     type = models.CharField(max_length=100)
 
